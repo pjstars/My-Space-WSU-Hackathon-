@@ -2,7 +2,7 @@
 
 Summary: 
 
-Contributors List: Ifrat, Amianah, Sukria, and Pearl. 
+Contributors List: Ifrat, Aminah, Sukria, and Pearl. 
 
 Navigating the repo:
 
