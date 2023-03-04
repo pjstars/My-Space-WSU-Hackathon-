@@ -4,7 +4,7 @@ Summary:
 
 Contributors List: Ifrat, Patricia, Sukria, and Pearl. 
 
-**Navigating the repo: **
+**Navigating the repo: ******
 
 -Where to find the notebooks, data, code, etc in the repo
 
