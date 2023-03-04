@@ -1,0 +1,115 @@
+
+body{
+    background-color: rgb(18, 31, 67);
+}
+.title{
+    color: rgb(128, 153, 157);
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+.ring_1st{
+    width: 300px;
+    height: 300px;
+    border:1px solid #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin:auto;
+    -webkit-animation:circle 5s linear infinite;
+    animation: circle 5s linear infinite;
+
+
+}
+
+@-webkit-keyframes circle{
+
+    0%{
+        transform: rotate(0deg)translate(-152px)rotate(0deg);
+    
+    }
+    100%{
+        transform: rotate(360deg) translate(-152px)rotate(-360deg);
+    }
+}
+
+
+   
+
+
+
+.ring_2nd{
+    width: 400px;
+    height: 400px;
+    border:1px solid #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+ }
+
+ .circle_2{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin:auto;
+    -webkit-animation:circle 4s linear infinite;
+    animation: circle 4s linear infinite;
+
+
+}
+@-webkit-keyframes .circle_2{
+    0%{
+        transform: rotate(0deg)translate(-152px)rotate(0deg);
+    
+    }
+    100%{
+        transform: rotate(360deg) translate(-152px)rotate(-360deg);
+    }
+}
+
+ .ring_3rd{
+    width: 200px;
+    height: 200px;
+    border:1px solid #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+ 
+ 
+ }
+ 
+ 
