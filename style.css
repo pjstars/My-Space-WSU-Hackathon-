@@ -1,0 +1,95 @@
+body{
+    background-image: url("galaxy.jpg");
+    background-size: 60;
+
+}
+.signup-box{
+    width: 360px;
+    height: 450px;
+    margin: auto;
+    color: aliceblue;
+    border-radius: 3px;
+}
+
+.login-box{
+    width: 360px;
+    height: 270px;
+    color: white;
+    margin: auto;
+    border-radius: 3px;
+   
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+h4{
+    text-align:center;
+}
+
+form{
+    width: 300px;
+    margin-left:20px;
+}
+
+form label{
+    display: flex;
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid rgb(226, 222, 243);
+    border-radius: 60px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top:20px;
+    border-color: #000000;
+    color: rgb(32, 32, 120);
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    color:white;
+    font-size: 15px;
+}
+
+.para-2{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.para-2 a{
+    color: #ed7a7a;
+}
+
+.para-3{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.para-3 a{
+    color: #ed7a7a;
+}
+    
+.title{
+    color: rgb(128, 153, 157);
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}

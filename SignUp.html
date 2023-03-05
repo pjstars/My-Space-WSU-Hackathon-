@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: url("galaxy.jpg");
+            background-size: 1230px;
+        }
+    </style>
+    <title>Sign Up</title>
+</head>
+<body> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="">
+            <label>Last Name</label>
+            <input type="text" placeholder="">
+            <label>Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <input type="password" placeholder="">
+            <label>Confirm Password</label>
+            <input type="confirm password" placeholder="">
+            <input type="button" value="Submit">
+        </form>
+       <!--<p>By clicking the Sign up, you agree to our <br>
+        <a href="#"> Terms and condition</a> and <a href="#">Privacy Statement</a></p>-->
+    </div>
+    <p class="para-2">Already have an account? <a href="Login.html">Login</a></p>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"></script>
+    <script>
+        /// Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCoVWe6382f0HXAwls_iW0te4TuDiOerTE",
+          authDomain: "my-space-841ba.firebaseapp.com",
+          projectId: "my-space-841ba",
+          storageBucket: "my-space-841ba.appspot.com",
+          messagingSenderId: "825519885272",
+          appId: "1:825519885272:web:58ca80b0a4179fb6ddc0ad"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+          // Add event listener to submit button
+  document.querySelector('input[type="button"]').addEventListener('click', function() {
+    var firstName = document.querySelector('input[name="firstName"]').value;
+    var lastName = document.querySelector('input[name="lastName"]').value;
+    var email = document.querySelector('input[name="email"]').value;
+    var password = document.querySelector('input[name="password"]').value;
+    db.collection("users").add({
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+        // TODO: Redirect to success page
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+  });
+  </script>
+  </body>
+  </html>
