@@ -32,8 +32,8 @@ body{
     text-decoration: none;
     top:100px;
     left:0px;
-    margin-left: 200px;
-    margin-top: 120px;
+    margin-left: 595px;
+    margin-top: 125px;
     cursor: pointer;
     transition: all 0.003s ease-out;
     overflow: hidden;
@@ -123,7 +123,7 @@ body{
     text-decoration: none;
     top:100px;
     left:0px;
-    margin-left: 160px;
+    margin-left: 570px;
     margin-top: 160px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -222,8 +222,8 @@ body{
     text-decoration: none;
     top:100px;
     left:0px;
-    margin-left: 400px;
-    margin-top: 460px;
+    margin-left: 650px;
+    margin-top: 490px;
     cursor: pointer;
     transition: all 0.3s ease-out;
     overflow: hidden;
@@ -316,7 +316,7 @@ body{
     text-decoration: none;
     top:100px;
     left:0px;
-    margin-left: 465px;
+    margin-left: 860px;
     margin-top: 160px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -430,7 +430,7 @@ body{
     text-decoration: none;
     top:100px;
     left:0px;
-    margin-left: 470px;
+    margin-left: 875px;
     margin-top: 410px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -500,6 +500,35 @@ body{
       width: 70%;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
