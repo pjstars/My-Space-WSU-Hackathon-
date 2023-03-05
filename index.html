@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Space</title>
+<link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+
+<body>
+  
+<div id="login-box">
+  <div class="left">
+    <h1 id='status'>Login</h1>
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    <input type="submit" id='login' name="login" value="Login" />
+    <input type="submit" id='sign-up' name="sign-up" value="Sign Up" />
+    <button id="logout">Logout</button>
+  </div>
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+    
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCoVWe6382f0HXAwls_iW0te4TuDiOerTE",
+      authDomain: "my-space-841ba.firebaseapp.com",
+      projectId: "my-space-841ba",
+      storageBucket: "my-space-841ba.appspot.com",
+      messagingSenderId: "825519885272",
+      appId: "1:825519885272:web:58ca80b0a4179fb6ddc0ad"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+const signUp = document.getElementById('sign-up');
+signUp.addEventListener('click',(e) => {
+    e.preventDefault();
+
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var username = document.getElementById('username').value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+     // Signed in 
+      const user = userCredential.user;
+
+      set(ref(database, 'users/' + user.uid),{
+          username: username,
+          email: email
+      })
+
+      alert('user created!');
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      alert(errorMessage);
+    // ..
+    });
+
+});
+
+ login.addEventListener('click',(e)=>{
+   var email = document.getElementById('email').value;
+   var password = document.getElementById('password').value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+
+        const dt = new Date();
+         update(ref(database, 'users/' + user.uid),{
+          last_login: dt,
+        })
+
+         alert('User loged in!');
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+  });
+
+ });
+
+// const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    // ...
+  } else {
+    
+  }
+});
+
+logout.addEventListener('click',(e)=>{
+
+   signOut(auth).then(() => {
+     // Sign-out successful.
+     alert('user loged out');
+   }).catch((error) => {
+     // An error happened.
+     const errorCode = error.code;
+     const errorMessage = error.message;
+
+        alert(errorMessage);
+   });
+
+});
+
+</script>
+
+</html>
