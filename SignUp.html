@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: url("galaxy.jpg");
+            background-size: 1230px;
+        }
+    </style>
+    <title>Sign Up</title>
+</head>
+<body> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form>
+            <label>First Name</label>
+            <input type="text" id="firstNameInput" placeholder="">
+            <label>Last Name</label>
+            <input type="text" id="lastNameInput" placeholder="">
+            <label>Email</label>
+            <input type="email" id="emailInput" placeholder="">
+            <label>Password</label>
+            <input type="password" id="passwordInput" placeholder="">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPasswordInput" placeholder="">
+            <input type="button" value="Submit" onclick="signup()">
+        </form>
+    </div>
+    <p class="para-2">Already have an account? <a href="Login.html">Login</a></p>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyBoNaMajlXPIo-Ff_8Cl8SPNMVbbQGfbRI",
+        authDomain: "newmyspace-e6a63.firebaseapp.com",
+        databaseURL: "https://newmyspace-e6a63-default-rtdb.firebaseio.com",
+        projectId: "newmyspace-e6a63",
+        storageBucket: "newmyspace-e6a63.appspot.com",
+        messagingSenderId: "697933163552",
+        appId: "1:697933163552:web:5f3055f3c8b9157fbf2045"
+    };
+      firebase.initializeApp(firebaseConfig);
+
+      function signup() {
+        var firstName = document.getElementById("firstNameInput").value;
+        var lastName = document.getElementById("lastNameInput").value;
+        var email = document.getElementById("emailInput").value;
+        var password = document.getElementById("passwordInput").value;
+        var confirmPassword = document.getElementById("confirmPasswordInput").value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return;
+        }
+
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            // Signed up
+            var user = userCredential.user;
+            console.log(user);
+            // Add first name and last name to user profile
+            user.updateProfile({
+              displayName: firstName + " " + lastName
+            }).then(() => {
+              console.log("User profile updated");
+              // redirect to dashboard or home page
+            }).catch((error) => {
+              console.log(error);
+            });
+          })
+          .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorMessage);
+            alert(errorMessage);
+          });
+      }
+    </script>
+</body>
+</html>
