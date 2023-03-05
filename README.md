@@ -1,6 +1,7 @@
 **MY SPACE**
 
 Summary: 
+My space is a project 
 
 Contributors List: Ifrat, Aminah, Sukria, and Pearl. 
 
