@@ -1,19 +1,515 @@
 
 body{
-    background-color: rgb(18, 31, 67);
+    background-color: rgb(3, 13, 37);
+    
 }
 .title{
-    color: rgb(128, 153, 157);
+    color: rgb(189, 217, 221);
     margin-top: 100px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-
+    text-shadow: 0 0 50px #51c1b0 ;
+    
 
 }
+
+
+
+
+
+
+  
+.button {
+    font-size: 1px;
+    width:5px;
+    height: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid #3d9c63;
+    border-radius: 50%;
+    text-decoration: none;
+    top:100px;
+    left:0px;
+    margin-left: 200px;
+    margin-top: 120px;
+    cursor: pointer;
+    transition: all 0.003s ease-out;
+    overflow: hidden;
+    box-shadow: 0 0 30px #51c1b0;
+  }
+  .button:hover {
+    background: #d3e6db;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    background: rgb(3, 13, 37);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    ;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.02s ease-in-out;
+  }
+  
+  .popup h4 {
+    margin-top: 0;
+    color: #04032c;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+  /* 2nd planet*/
+  
+  .button2 {
+    font-size: 1px;
+    width:0px;
+    height: 0px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid #3d9c63;
+    border-radius: 50%;
+    text-decoration: none;
+    top:100px;
+    left:0px;
+    margin-left: 160px;
+    margin-top: 160px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    box-shadow: 0 0 30px #51c1b0;
+    
+  }
+  .button2:hover {
+    background: #d3e6db;
+  }
+  
+  .overlay2 {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    background: rgb(3, 13, 37);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    ;
+  }
+  .overlay2:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup2 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.02s ease-in-out;
+  }
+  
+  .popup2 h4 {
+    margin-top: 0;
+    color: #020621;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup2 .close2 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup2 .close2:hover {
+    color: #06D85F;
+  }
+  .popup2 .content2 {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box2{
+      width: 70%;
+    }
+    .popup2{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .button3 {
+    font-size: 1px;
+    width:5px;
+    height: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid #85f09c;
+  
+    border-radius: 50%;
+    text-decoration: none;
+    top:100px;
+    left:0px;
+    margin-left: 400px;
+    margin-top: 460px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    box-shadow: 0 0 30px #51c1b0;
+  }
+  .button3:hover {
+    background: #d3e6db;
+  }
+  
+  .overlay3 {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    background: rgb(3, 13, 37);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    ;
+  }
+  .overlay3:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup3 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.02s ease-in-out;
+  }
+  
+  .popup3 h4 {
+    margin-top: 0;
+    color: #04032c;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup3 .close3 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup3 .close3:hover {
+    color: #06D85F;
+  }
+  .popup3 .content3 {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box3{
+      width: 70%;
+    }
+    .popup3{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  .button5 {
+    font-size: 1px;
+    width:5px;
+    height: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid #85f09c;
+  
+    border-radius: 50%;
+    text-decoration: none;
+    top:100px;
+    left:0px;
+    margin-left: 465px;
+    margin-top: 160px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    box-shadow: 0 0 30px #51c1b0;
+  }
+  .button5:hover {
+    background: #d3e6db;
+  }
+  
+  .overlay5 {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    background: rgb(3, 13, 37);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    ;
+  }
+  .overlay5:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup5 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.02s ease-in-out;
+  }
+  
+  .popup5 h4 {
+    margin-top: 0;
+    color: #04032c;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup5 .close5 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup5 .close5:hover {
+    color: #06D85F;
+  }
+  .popup5 .content5 {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box5{
+      width: 70%;
+    }
+    .popup5{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 2nd planet*/
+  
+  .button4 {
+    font-size: 1px;
+    width:0px;
+    height: 0px;
+    padding: 10px;
+    color: #432525;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 3px solid #85f09c;
+    border-radius: 50%;
+    text-decoration: none;
+    top:100px;
+    left:0px;
+    margin-left: 470px;
+    margin-top: 410px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    box-shadow: 0 0 40px #95df46;
+    
+  }
+  .button4:hover {
+    background: #d3e6db;
+  }
+  
+  .overlay4 {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    background: rgb(3, 13, 37);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    ;
+  }
+  .overlay4:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup4 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.02s ease-in-out;
+  }
+  
+  .popup4 h4 {
+    margin-top: 0;
+    color: #020621;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup4 .close4 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup4 .close4:hover {
+    color: #06D85F;
+  }
+  .popup4 .content4 {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box4{
+      width: 70%;
+    }
+    .popup4{
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
 .ring_1st{
     width: 300px;
     height: 300px;
-    border:1px solid #ccc;
+    border:1px solid white;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -35,42 +531,27 @@ body{
     right: 0;
     overflow: hidden;
     margin:auto;
+    box-shadow: 30px;
+    animation: glow 1s infinite alternate;
     -webkit-animation:circle 5s linear infinite;
     animation: circle 5s linear infinite;
-
-
 }
 
 @-webkit-keyframes circle{
 
     0%{
-        transform: rotate(0deg)translate(-152px)rotate(0deg);
+        transform: rotate(0deg)translate(-150px)rotate(0deg);
     
     }
     100%{
-        transform: rotate(360deg) translate(-152px)rotate(-360deg);
+        transform: rotate(360deg) translate(-150px)rotate(-360deg);
     }
 }
 
 
    
+.circle_2{
 
-
-
-.ring_2nd{
-    width: 400px;
-    height: 400px;
-    border:1px solid #ccc;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;
- }
-
- .circle_2{
     width: 20px;
     height: 20px;
     background-color: white;
@@ -82,8 +563,8 @@ body{
     right: 0;
     overflow: hidden;
     margin:auto;
-    -webkit-animation:circle 4s linear infinite;
-    animation: circle 4s linear infinite;
+    -webkit-animation:circle 8s linear infinite;
+    animation: circle 9s linear infinite;
 
 
 }
@@ -97,10 +578,78 @@ body{
     }
 }
 
- .ring_3rd{
+
+.circle_3{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin:auto;
+    -webkit-animation:circle 5s linear infinite;
+    animation: circle 3s linear infinite;
+
+ }
+
+
+
+.circle_4{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin:auto;
+    -webkit-animation:circle 20s linear infinite;
+    animation: circle 20s linear infinite;
+
+}
+.circle_5{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin:auto;
+    -webkit-animation:circle 2s linear infinite;
+    animation: circle 2s linear infinite;
+
+}
+
+
+.ring_2nd{
+    width: 400px;
+    height: 400px;
+    border:1px solid white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+ }
+
+
+.ring_3rd{
     width: 200px;
     height: 200px;
-    border:1px solid #ccc;
+    border:1px solid white;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -113,3 +662,197 @@ body{
  }
  
  
+.circle_3_1{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    bottom: 30px;
+    left: 5px;
+    right: 40px;
+    box-shadow: 0 0 30px  #51c1b0;
+    animation: glow;
+
+}
+
+
+
+
+.circle_3_2{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    bottom: 0px;
+    left: 28px;
+    right: 0px;
+    box-shadow: 0 0 30px #51c1b0;
+    animation: glow ;
+
+
+}
+
+
+.circle_3_3{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    bottom: 30px;
+    left: 55px;
+    right: 40px;
+    box-shadow: 0 0 30px #51c1b0;
+    animation: glow;
+}
+
+.circle_3_4{
+    width: 5px;
+    height: 5px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 5px;
+    bottom: 30px;
+    left: 172px;
+    right: 50px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+.circle_3_5{
+    width: 15px;
+    height: 15px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 0px;
+    bottom: 100px;
+    left: 193px;
+    right: 50px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+
+.circle_3_6{
+    width: 5px;
+    height: 5px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 5px;
+    bottom: 30px;
+    left: 172px;
+    right: 50px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+
+.circle_3_7{
+    width: 20px;
+    height: 20px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 0px;
+    bottom: 170px;
+    left: 150px;
+    right: 50px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+
+.circle_2_1{ /*bottom circle in 3rd orbit*/
+    width: 20px;
+    height: 20px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 0px;
+    bottom: 20px;
+    left: 80px;
+    right: 0px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+.circle_2_2{
+    width: 50px;
+    height: 50px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 0px;
+    bottom: 200px;
+    left: 370px;
+    right: 0px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+
+.circle_2_3{
+    width: 20px;
+    height: 20px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;s
+    top: 0px;
+    bottom: 50px;
+    left: 330px;
+    right: 0px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+.circle_2_4{
+    width: 25px;
+    height: 25px;
+    background-color:#f4f4f4;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    bottom: 90px;
+    left: 200px;
+    right: 50px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+.circle_2_5{
+    width: 40px;
+    height: 40px;
+    background-color:#fcfcfc;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    bottom: 90px;
+    left: 0px;
+    right: 500px;
+    box-shadow: 0 0 50px #51c1b0;
+    animation: glow;
+
+}
+.circle_2_6{
+    width: 10px;
+    height: 10px;
+    background-color:#ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top:18px;
+    bottom: 100px;
+    left: 100px;
+    right: 0px;
+    box-shadow: 0 0 30px #53a498;
+
+    
+
+}
